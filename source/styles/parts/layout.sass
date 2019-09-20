@@ -1,0 +1,42 @@
+.container
+  position: relative
+  width: 1030px
+  margin: 0 auto
+
+  +m($laptop)
+    width: 980px
+
+  +m($tablet)
+    width: 760px
+    padding: 0 20px
+
+  +m($mobile)
+    width: 100%
+
+.main
+  flex: 1 1 auto
+
+  &.is-contact
+    padding-top: 40px
+    padding-bottom: 50px
+
+    h1
+      margin-bottom: 20px
+      font-size: 32px
+      font-weight: 400
+
+.footer
+  padding: 30px 0
+  border-top: 1px solid $border
+
+  &__title
+    margin-bottom: 15px
+    font-size: 12px
+    color: #999999
+    display: block
+    text-align: center
+
+  p
+    font-size: 12px
+    color: #999999
+    margin-bottom: 15px

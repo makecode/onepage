@@ -1,0 +1,64 @@
+.button
+  display: inline-flex
+  flex-wrap: nowrap
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  padding: 0 26px
+  min-width: 200px
+  max-width: 100%
+  height: 48px
+  line-height: 48px
+  background-color: $bg-orange
+  color: white
+  font-size: 15px
+  text-decoration: none
+  transition: all .3s ease-in-out
+  overflow: hidden
+
+  &__ico
+    margin-right: 15px
+    flex-shrink: 0
+    background-size: cover
+
+
+  &__text
+    display: inline-block
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+  &:hover
+    background-color: $bg-orange-hover
+
+  &.is-purple
+    background-color: $bg-purple
+    &:hover
+      background-color: $bg-purple-hover
+
+  &.is-blue
+    background-color: $bg-blue
+    &:hover
+      background-color: $bg-blue-hover
+
+  &.is-green
+    background-color: $bg-green
+    &:hover
+      background-color: $bg-green-hover
+
+  &.is-red
+    background-color: $bg-red
+    &:hover
+      background-color: $bg-red-hover
+
+  &.windows
+    .button__ico
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4JpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExOERCQjhGNzExQzI0RkZBQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4OTVBQkJGNEQwOEExMUU5QjIzQUU1OURDMjc2MDA4NCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4OTVBQkJGM0QwOEExMUU5QjIzQUU1OURDMjc2MDA4NCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNyAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOmVhMjRkNzQxLWFjMmYtNDBhOS1iY2Q4LWNmNTc2YjFjMDNiMCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjRmOWViMzQzLWY2YjEtYjI0Ny1hODU4LWVlNDhiNTdmY2MwYyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtOdbTIAAABYSURBVHjaYvz//z8DHsACxLJArIQNMwI1C+CQdAPiX0DMistkkGZcVjMCMV5nMTFQAAZOMwvUbwx4/I1X80gLMIpDWxhH8gSBP1A1OJMnIcPlcGUMgAADAPsyFapvukbtAAAAAElFTkSuQmCC')
+      width: 14px
+      height: 15px
+
+  &.android
+    .button__ico
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4JpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExOERCQjhGNzExQzI0RkZBQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCRDlBQjUxMUQwQTIxMUU5QjIzQUU1OURDMjc2MDA4NCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCRDlBQjUxMEQwQTIxMUU5QjIzQUU1OURDMjc2MDA4NCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNyAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOmVhMjRkNzQxLWFjMmYtNDBhOS1iY2Q4LWNmNTc2YjFjMDNiMCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjRmOWViMzQzLWY2YjEtYjI0Ny1hODU4LWVlNDhiNTdmY2MwYyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrZphsYAAADZSURBVHja1NMxCsJAEAXQrFpoI9iJZ7BSPI29IN7AwjNY2IonELSxtLIOFhaChQGxErYIWAjR9Q8MMjtJxJQOvCwO82EiG+OcC0T1oQ1T6Ir+BhawhtWnS2HBQAgv5xf93qnZVHgMDziq8AESGMl5I9auwQ1iaNFSYm0DFp7Q5NMLd2Ab+FXnMxa9Hpx0uHBR+I6zCmW1am6G5yyFnWr+Gg7+M5xU8JhAo+AfPYNI37AhWL5Vc4HqCoNv15NEPCx7VHs9W8pYKe+9U/2s8BLOqnfxPkWutwADAC79C4tKX93OAAAAAElFTkSuQmCC')
+      width: 15px
+      height: 16px

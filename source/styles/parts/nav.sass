@@ -1,0 +1,22 @@
+.nav
+  height: 50px
+  line-height: 50px
+  text-align: center
+  transition: all .3s ease-in-out
+  will-change: transform
+  z-index: 1
+
+  +m($tablet)
+    display: none
+
+  a,
+  a:visited
+    margin-right: 38px
+    color: $text
+    font-size: 15px
+    text-decoration: none
+    &:last-child
+      margin-right: 0
+
+  a:hover
+    text-decoration: underline

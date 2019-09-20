@@ -1,0 +1,24 @@
+.mobile-menu
+  padding-top: 38px
+  width: 285px
+  height: calc(100% - 74px)
+  background-color: white
+  position: fixed
+  top: 74px
+  left: -100%
+  transition: all .35s ease-in-out
+  z-index: 500
+
+  &__el
+    padding: 0 20px
+    margin-bottom: 30px
+
+  &__link
+    color: $text
+    font-size: 15px
+    transition: all .3s ease-in-out
+    &:hover
+      text-decoration: underline
+
+  &.is-open
+    left: 0

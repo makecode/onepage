@@ -1,0 +1,15 @@
+header.header
+  div.container
+    div.header__wrap
+      include mobile-menu
+      div.hamburger#hamburger
+        span.hamburger__el
+        span.hamburger__el
+        span.hamburger__el
+      a(href='#').logo
+        img(src=require('./../../../media/images/logo.png'))
+        span VLC Media Player
+      include nav
+      a(href="#").button.windows
+        span.button__ico
+        span.button__text Download VLC Media Player

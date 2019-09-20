@@ -1,0 +1,36 @@
+.form
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+  &__el
+    position: relative
+    margin-bottom: 15px
+    width: 100%
+
+    &.col-6
+      width: 50%
+      +m($mobile)
+        width: 100%
+
+    &.col-3
+      width: 24.3%
+      +m($mobile)
+        width: 100%
+
+      &:first-child
+        margin-right: 15px
+        +m($mobile)
+          margin-right: 0
+          margin-bottom: 0
+
+  &__button
+    button
+      width: 138px
+      height: 44px
+      line-height: 44px
+      color: #fff
+      background-color: #bdbdbd
+      font-size: 15px
+      transition: all 0.3s ease-in-out
+      border: none

@@ -1,0 +1,21 @@
+.description
+  margin-top: 35px
+  dl
+    display: flex
+    width: 100%
+    height: 46px
+    line-height: 46px
+    border-bottom: 1px solid $border
+
+    &:last-child
+      border-bottom: none
+
+  dt
+    width: 24%
+    +m($mobile)
+      width: 35%
+
+  dd
+    width: 76%
+    +m($mobile)
+      width: 65%

@@ -1,0 +1,57 @@
+extends ../../parts/layout
+block title
+  |Onepage-Software
+block main
+  header.header
+    div.container
+      div.header__wrap
+        div.mobile-menu
+          ul.mobile-menu
+            li.mobile-menu__el
+              a(href="#").mobile-menu__link Home
+            li.mobile-menu__el
+              a(href="#").mobile-menu__link What’s new?
+            li.mobile-menu__el
+              a(href="#").mobile-menu__link How to’s
+            li.mobile-menu__el
+              a(href="#").mobile-menu__link Contact us
+        div.hamburger#hamburger
+          span.hamburger__el
+          span.hamburger__el
+          span.hamburger__el
+        a(href='#').logo
+          img(src=require('./../../../media/images/logo.png'))
+          span VLC Media Player
+        nav.nav
+          a(href="#") Home
+          a(href="#") What’s new?
+          a(href="#") How to’s
+          a(href="#") Contact us
+        a(href="#").button.windows
+          span.button__ico
+          span.button__text Download VLC Media Player
+  main.main.is-contact
+    div.container
+      h1 Contact us
+      form(action="#").form
+        div.form__el.col-3
+          div.field
+            label.field__label Name
+            input(type="text" placeholder="First").field__input
+
+        div.form__el.col-3
+          div.field
+            input(type="text" placeholder="Last").field__input
+
+        div.form__el.col-6
+          div.field
+            label.field__label Email
+            input(type="text" placeholder="example@mail.com").field__input
+
+        div.form__el
+          div.field
+            label.field__label Message
+            textarea(placeholder="Leave a short message").field__area
+
+        div.form__button
+          button(type="submit") Submit

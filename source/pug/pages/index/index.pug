@@ -1,0 +1,76 @@
+extends ../../parts/layout
+block title
+  |Onepage-Software
+block main
+  header.header.is-general#header
+    div.container
+      div.header__wrap
+        div.mobile-menu
+          ul.mobile-menu
+            li.mobile-menu__el
+              a(href="#").mobile-menu__link Home
+            li.mobile-menu__el
+              a(href="#").mobile-menu__link What’s new?
+            li.mobile-menu__el
+              a(href="#").mobile-menu__link How to’s
+            li.mobile-menu__el
+              a(href="#").mobile-menu__link Contact us
+        div.hamburger#hamburger
+          span.hamburger__el
+          span.hamburger__el
+          span.hamburger__el
+        a(href='#').logo
+          img(src=require('./../../../media/images/logo.png'))
+          span VLC Media Player
+        nav.nav
+          a(href="#") Home
+          a(href="#") What’s new?
+          a(href="#") How to’s
+          a(href="#") Contact us
+        a(href="#").button.windows
+          span.button__ico
+          span.button__text Download VLC Media Player
+  main.main
+    div.promo
+      div.container
+        div.promo__wrap
+          a(href='#').promo__logo
+            img(src=require('./../../../media/images/logo-big.png'))
+            h1.promo__title VLC Media Player
+          p.promo__text VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+          div.promo__button
+            a(href="#").button.android
+              span.button__ico
+              span.button__text Download VLC Media Player
+
+    div.info-block
+      div.container
+        div.info-block__top
+          img.info-block__img(src=require('./../../../media/images/banner.png'))
+          h3.info-block__title Enjoy the video with VLC Media Player
+        div.info-block__bottom
+          p VLC media player (commonly known as just VLC) is a free and open-source portable cross-platform media player software and streaming media server developed by the VideoLAN project. VLC is available for desktop operating systems and mobile platforms, such as Android, iOS, iPadOS, Tizen, Windows 10 Mobile and Windows Phone. VLC is also available on digital distribution platforms such as Apple's App Store, Google Play and Microsoft Store.1
+          div.description
+            dl
+              dt Developer
+              dd Electronic Arts
+            dl
+              dt Initial Release
+              dd 2011
+            dl
+              dt Platforms
+              dd Microsoft Windows, macOS
+            dl
+              dt Total Users
+              dd 80 Million+
+            dl
+              dt Available in
+              dd 19 Languages
+
+    div.download
+      div.container
+        h4 Download VLC Media Player now
+        a(href="#").button.windows
+          span.button__ico
+          span.button__text Download VLC Media Player
+
