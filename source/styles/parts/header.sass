@@ -11,7 +11,6 @@
     position: relative
     display: flex
     flex-direction: row
-    justify-content: space-between
     align-items: center
     background-color: white
     height: $headerHeight
@@ -44,6 +43,18 @@
       color: $text
       font-size: 24px
 
+  .nav
+    position: absolute
+    top: 50%
+    right: 350px
+    transform: translateY(-50%)
+
+  .button
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+
   +m($mobile)
     .button
       display: none
@@ -60,6 +71,9 @@
     opacity: 0
     z-index: 0
 
+  .nav
+    right: 0
+
   &.withButton
     .button
       right: 0
@@ -67,7 +81,8 @@
       z-index: 1
 
     .nav
-      transform: translateX(-380px)
+      transform: translateX(-380px) translateY(-50%)
+
       +m($laptop)
-        transform: translateX(-330px)
+        transform: translateX(-330px) translateY(-50%)
 
